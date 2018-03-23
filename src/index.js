@@ -3,6 +3,7 @@ import { render } from "react-dom";
 import { injectGlobal } from "styled-components";
 
 import Header from "./Header";
+import About from "./About";
 
 const root = document.querySelector("#app");
 
@@ -31,6 +32,7 @@ const GlobalStyle = injectGlobal`
 const App = () => (
   <React.Fragment>
     <Header />
+    <About />
   </React.Fragment>
 );
 
