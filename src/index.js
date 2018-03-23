@@ -2,6 +2,8 @@ import React from "react";
 import { render } from "react-dom";
 import { injectGlobal } from "styled-components";
 
+import Header from "./Header";
+
 const root = document.querySelector("#app");
 
 const GlobalStyle = injectGlobal`
@@ -20,13 +22,16 @@ const GlobalStyle = injectGlobal`
     margin: 0;
     padding: 0;
     line-height: 1.45;
+    background-image: url('./img/topography-pattern.svg');
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
   }
 `;
 
 const App = () => (
-  <div>
-    <p>hello world</p>
-  </div>
+  <React.Fragment>
+    <Header />
+  </React.Fragment>
 );
 
 render(<App />, root);
