@@ -2,9 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const Wrapper = styled.header`
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
   border: 0.1em solid rgba(0, 0, 0, 0.9);
   display: flex;
 `;
