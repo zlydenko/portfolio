@@ -2,8 +2,7 @@ import React from "react";
 import { render } from "react-dom";
 import { injectGlobal } from "styled-components";
 
-import Header from "./Header";
-import About from "./About";
+import App from "./App";
 
 const root = document.querySelector("#app");
 
@@ -23,17 +22,9 @@ const GlobalStyle = injectGlobal`
     margin: 0;
     padding: 0;
     line-height: 1.45;
-    background-image: url('./img/topography-pattern.svg');
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
   }
 `;
-
-const App = () => (
-  <React.Fragment>
-    <Header />
-    <About />
-  </React.Fragment>
-);
 
 render(<App />, root);
