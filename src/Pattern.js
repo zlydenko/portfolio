@@ -6,7 +6,7 @@ const Pttrn = styled.div`
   height: 100%;
   width: 100%;
   background-color: #ffffff;
-  transition: background-image 0.3s;
+  transition: background-image 3s;
   transition-timing-function: ease-in-out;
   background-image: ${props =>
     `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='800' viewBox='0 0 600 600'%3E%3Cpath fill='${
