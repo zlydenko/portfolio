@@ -1,14 +1,14 @@
-import React, { Component, Fragment } from "react";
+import React from "react";
 import styled from "styled-components";
 import Particles from "react-particles-js";
 
 const particlesConfig = {
   particles: {
     number: {
-      value: 100,
+      value: 50,
       density: {
         enable: true,
-        value_area: 600
+        value_area: 900
       }
     },
     color: {
@@ -98,7 +98,7 @@ const particlesConfig = {
 const Wrapper = styled(Particles)`
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   z-index: -999;
   overflow: hidden;
 `;
