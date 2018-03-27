@@ -3318,6 +3318,10 @@ locate-path@^2.0.0:
     p-locate "^2.0.0"
     path-exists "^3.0.0"
 
+lodash.clonedeep@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
+
 lodash@^4.13.1, lodash@^4.14.0, lodash@^4.17.2, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0:
   version "4.17.5"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.5.tgz#99a92d65c0272debe8c96b6057bc8fbfa3bed511"
@@ -4312,6 +4316,12 @@ react-dom@^16.3.2:
 react-is@^16.3.1:
   version "16.3.2"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.3.2.tgz#f4d3d0e2f5fbb6ac46450641eb2e25bf05d36b22"
+
+react-particles-js@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/react-particles-js/-/react-particles-js-2.1.2.tgz#983814f22b63f2ea92623319e9d9353f22ddcc55"
+  dependencies:
+    lodash.clonedeep "^4.5.0"
 
 react-router-dom@^4.2.2:
   version "4.2.2"
