@@ -105,14 +105,6 @@ const styles = {
   overflow: "hidden"
 };
 
-// const Wrapper = styled(Particles)`
-//   width: 100%;
-//   height: 100vh;
-//   position: fixed;
-//   z-index: -999;
-//   overflow: hidden;
-// `;
-
 const Background = () => <Particles style={styles} params={particlesConfig} />;
 
 export default Background;
