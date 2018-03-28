@@ -8,7 +8,7 @@ const particlesConfig = {
       value: 50,
       density: {
         enable: true,
-        value_area: 900
+        value_area: 1000
       }
     },
     color: {
@@ -95,14 +95,24 @@ const particlesConfig = {
   retina_detect: true
 };
 
-const Wrapper = styled(Particles)`
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  z-index: -999;
-  overflow: hidden;
-`;
+const styles = {
+  position: "fixed",
+  top: 0,
+  left: 0,
+  width: "100%",
+  height: "100%",
+  zIndex: -999,
+  overflow: "hidden"
+};
 
-const Background = () => <Wrapper params={particlesConfig} />;
+// const Wrapper = styled(Particles)`
+//   width: 100%;
+//   height: 100vh;
+//   position: fixed;
+//   z-index: -999;
+//   overflow: hidden;
+// `;
+
+const Background = () => <Particles style={styles} params={particlesConfig} />;
 
 export default Background;
