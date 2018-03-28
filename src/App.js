@@ -9,7 +9,13 @@ export default class App extends Component {
     return (
       <React.Fragment>
         <Background />
-        <About />
+        <div className="container">
+          <div className="row">
+            <div className="col-xs-12">
+              <About />
+            </div>
+          </div>
+        </div>
       </React.Fragment>
     );
   }
