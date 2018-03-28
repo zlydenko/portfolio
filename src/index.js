@@ -9,7 +9,6 @@ const root = document.querySelector("#app");
 const GlobalStyle = injectGlobal`
   html {
     box-sizing: border-box;
-    font-size: 1.375em;
   }
 
   *,
