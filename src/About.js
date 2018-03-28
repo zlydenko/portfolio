@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import { about } from "./content";
 
-const Text = styled.p`
+export const Text = styled.p`
   font-size: 1.8em;
   font-family: "Fira Mono", monospace;
   font-weight: 400;
@@ -13,9 +13,9 @@ const Text = styled.p`
     font-size: 2.4em;
   }
 `;
-const SmallText = styled.p`
-  font-size: 1.4em;
 
+export const SmallText = styled.p`
+  font-size: 1.4em;
   text-shadow: 0.04em 0em gold;
 `;
 
