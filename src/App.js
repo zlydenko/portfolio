@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 import Background from "./Background";
 import About from "./About";
+import Skills from "./Skills";
 
 export default class App extends Component {
   render() {
@@ -13,6 +14,9 @@ export default class App extends Component {
           <div className="row">
             <div className="col-xs-12">
               <About />
+            </div>
+            <div className="col-xs-12">
+              <Skills />
             </div>
           </div>
         </div>
