@@ -9,6 +9,10 @@ export const Text = styled.p`
   font-weight: 400;
   letter-spacing: -0.04em;
 
+  &:first-child::first-line {
+    font-weight: 800;
+  }
+
   @media (min-width: 768px) {
     font-size: 2.4em;
   }
