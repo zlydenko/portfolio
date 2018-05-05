@@ -9,10 +9,6 @@ export const Text = styled.p`
   font-weight: 400;
   letter-spacing: -0.04em;
 
-  &:first-child::first-line {
-    font-weight: 800;
-  }
-
   @media (min-width: 768px) {
     font-size: 2.4em;
   }
@@ -20,6 +16,7 @@ export const Text = styled.p`
 
 export const SmallText = styled.p`
   font-size: 1.4em;
+  font-family: "Fira Mono", monospace;
   text-shadow: 0.04em 0em gold;
 `;
 

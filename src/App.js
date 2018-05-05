@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Background from "./Background";
 import About from "./About";
 import Skills from "./Skills";
+import Projects from "./Projects";
 
 export default class App extends Component {
   render() {
@@ -18,6 +19,7 @@ export default class App extends Component {
             <div className="col-xs-12">
               <Skills />
             </div>
+            <div className="col-xs-12">{/* <Projects /> */}</div>
           </div>
         </div>
       </React.Fragment>

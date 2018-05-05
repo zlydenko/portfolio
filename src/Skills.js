@@ -9,18 +9,18 @@ const Wrapper = styled.section`
   position: relative;
 `;
 
-const Btn = styled.button`
+export const Btn = styled.button`
   position: absolute;
   bottom: 0.5em;
   right: 0;
   background-color: rgba(255, 255, 255, 0.5);
-  border: 0.07em solid black;
+  border: 0.03em solid black;
   font-size: 3em;
   padding: 0.5em;
   cursor: pointer;
 `;
 
-const SkillsTitle = styled.h3`
+export const SkillsTitle = styled.h3`
   margin-top: 0em;
   font-size: 3em;
   font-weight: 800;
@@ -31,22 +31,22 @@ const SkillsTitle = styled.h3`
   text-shadow: 0.06em 0.06em tomato;
 `;
 
-const HobbiesTitle = SkillsTitle.extend`
+export const HobbiesTitle = SkillsTitle.extend`
   text-shadow: 0.06em 0.06em blue;
 `;
 
-const PlansTitle = SkillsTitle.extend`
+export const PlansTitle = SkillsTitle.extend`
   text-shadow: 0.06em 0.06em lightgreen;
 `;
 
-const List = styled.ul`
+export const List = styled.ul`
   font-family: "Fira Mono", monospace;
   list-style: none;
   padding: 0em;
   font-size: 1.3em;
 `;
 
-const Item = styled.li`
+export const Item = styled.li`
   background-color: rgba(255, 255, 255, 0.7);
   border: 0.1em solid black;
   margin-bottom: 0.2em;
@@ -56,7 +56,7 @@ const Item = styled.li`
   font-size: 1.1em;
 `;
 
-const MakeList = ({ list }) => (
+export const MakeList = ({ list }) => (
   <List>
     {list.map((text, _) => (
       <Item key={_}>
@@ -67,19 +67,22 @@ const MakeList = ({ list }) => (
 );
 
 export default class Skills extends Component {
-  state = {
-    sectionVisible: 1
-  };
+  constructor() {
+    super();
+    state = {
+      sectionVisible: 1
+    };
+  }
 
-  nextList = () => {
-    let counter = this.state.sectionVisible;
-    if (counter === 3) {
-      counter = 1;
-    } else {
-      counter++;
-    }
-    this.setState({ sectionVisible: counter });
-  };
+  // nextList = () => {
+  //   let counter = this.state.sectionVisible;
+  //   if (counter === 3) {
+  //     counter = 1;
+  //   } else {
+  //     counter++;
+  //   }
+  //   this.setState({ sectionVisible: counter });
+  // };
 
   render() {
     return (
