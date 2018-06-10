@@ -6,6 +6,7 @@ import theme from "./theme";
 
 import Background from "./Background";
 import About from "./About";
+import Skills from "./Skills";
 
 injectGlobal`
   html {
@@ -20,6 +21,7 @@ export default () => (
       <div className="container">
         <div className="col-xs-12">
           <About />
+          <Skills />
         </div>
       </div>
     </Fragment>
