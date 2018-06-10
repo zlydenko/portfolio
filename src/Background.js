@@ -1,5 +1,4 @@
 import React from "react";
-import styled from "styled-components";
 import Particles from "react-particles-js";
 
 const particlesConfig = {
@@ -105,6 +104,4 @@ const styles = {
   overflow: "hidden"
 };
 
-const Background = () => <Particles style={styles} params={particlesConfig} />;
-
-export default Background;
+export default () => <Particles style={styles} params={particlesConfig} />;

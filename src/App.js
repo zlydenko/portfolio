@@ -1,28 +1,29 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Fragment } from "react";
+import { ThemeProvider, injectGlobal } from "styled-components";
+import "flexboxgrid2";
+
+import theme from "./theme";
 
 import Background from "./Background";
 import About from "./About";
 import Skills from "./Skills";
-import Projects from "./Projects";
 
-export default class App extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Background />
-        <div className="container">
-          <div className="row">
-            <div className="col-xs-12">
-              <About />
-            </div>
-            <div className="col-xs-12">
-              <Skills />
-            </div>
-            <div className="col-xs-12">{/* <Projects /> */}</div>
-          </div>
-        </div>
-      </React.Fragment>
-    );
+injectGlobal`
+  html {
+    font-size: ${theme.sizes.base}
   }
-}
+`;
+
+export default () => (
+  <ThemeProvider theme={theme}>
+    <Fragment>
+      <Background />
+      <div className="container">
+        <div className="col-xs-12">
+          <About />
+          <Skills />
+        </div>
+      </div>
+    </Fragment>
+  </ThemeProvider>
+);
