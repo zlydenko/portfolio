@@ -10,7 +10,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "push": "git push origin feat/nextjs && now --public && now alias"
   },
   "dependencies": {
     "next": "^6.1.1",
