@@ -2,6 +2,7 @@ import Head from "next/head";
 
 import Background from "../components/Background";
 import About from "../components/About";
+import Project from "../components/Project";
 
 export default () => (
   <div>
@@ -18,7 +19,27 @@ export default () => (
       />
     </Head>
     <Background />
-    <About />
+    <div className="container">
+      <div className="row center-md">
+        <About />
+      </div>
+      <div className="row center-md">
+        <Project
+          title={"Hello world"}
+          description={"some shitty thing"}
+          image={["/static/projects/uberEatsDesktop.jpg"]}
+        />
+        <Project
+          title={"Hello world"}
+          image={["/static/projects/aviasalesDesktop.png"]}
+        />
+        <Project
+          title={"Hello world"}
+          image={["/static/projects/aviasalesDesktop2.png"]}
+        />
+      </div>
+    </div>
+
     <style global jsx>
       {`
         html {
