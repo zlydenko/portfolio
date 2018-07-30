@@ -1,4 +1,4 @@
-export default ({ rounded, title, text }) => (
+export default ({ title, text }) => (
   <div>
     <header>
       <svg
@@ -41,18 +41,39 @@ export default ({ rounded, title, text }) => (
     </main>
     <style jsx>{`
       div {
+        text-align: left;
         padding: 20px;
         padding-top: 15px;
-        background-color: rgb(199, 46, 40);
+        background-color: rgb(255, 255, 255);
         position: absolute;
-        top: 0;
+        top: 0em;
         right: 0;
         left: 0;
         bottom: 0;
-        width: calc(100% - 40px);
-        height: calc(100% - 35px);
-        ${rounded && `border-radius: 10px;`};
         animation: appear 0.4s ease forwards;
+        border: 0.1em solid rgb(71, 69, 209);
+      }
+
+      p {
+        margin-top: 0.5em;
+      }
+
+      p a {
+        font-weight: 500;
+      }
+
+      @media screen and (min-width: 1000px) {
+        div {
+          top: 2em;
+          margin-left: 2em;
+          margin-right: 2em;
+          height: calc(100vh - 5em);
+        }
+
+        h3 {
+          margin-top: 0em;
+          text-align: center;
+        }
       }
 
       header {
@@ -60,7 +81,13 @@ export default ({ rounded, title, text }) => (
       }
 
       main {
-        color: rgb(217, 187, 84);
+        color: rgb(71, 69, 209);
+      }
+
+      h3 {
+        margin-top: 0em;
+        margin-bottom: 0.5em;
+        text-align: left;
       }
 
       @keyframes appear {
