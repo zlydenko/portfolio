@@ -12,6 +12,10 @@ export default () => (
         interest in "how things work" and "how to create things that work
       </p>
       <style jsx>{`
+        .text:first-child:first-line {
+          font-weight: 900;
+        }
+
         section {
           min-height: 100vh;
           display: flex;
@@ -22,13 +26,11 @@ export default () => (
 
         small {
           font-size: 1.2em;
-          font-family: "Fira Mono", monospace;
           text-shadow: 0.04em 0em 10px gold;
         }
 
         .text {
           font-size: 1.4em;
-          font-family: "Fira Mono", monospace;
           font-weight: 400;
           letter-spacing: -0.04em;
         }

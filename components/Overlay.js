@@ -41,6 +41,8 @@ export default ({ title, text }) => (
     </main>
     <style jsx>{`
       div {
+        font-family: "Fira Mono", monospace;
+        font-weight: 400;
         text-align: left;
         padding: 20px;
         padding-top: 15px;
@@ -88,6 +90,7 @@ export default ({ title, text }) => (
         margin-top: 0em;
         margin-bottom: 0.5em;
         text-align: left;
+        font-weight: 700;
       }
 
       @keyframes appear {

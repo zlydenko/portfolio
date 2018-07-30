@@ -14,8 +14,8 @@ export default () => (
         href="https://unpkg.com/flexboxgrid2@7.1.0/flexboxgrid2.css"
       />
       <link
+        href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Poppins:400,900"
         rel="stylesheet"
-        href="https://fonts.googleapis.com/css?family=Fira+Mono|Open+Sans"
       />
     </Head>
     <Background />
@@ -39,7 +39,8 @@ export default () => (
         }
 
         body {
-          font-family: "Open Sans", sans-serif;
+          font-family: "Poppins", sans-serif;
+          font-weight: 400;
           margin: 0;
           padding: 0;
         }
