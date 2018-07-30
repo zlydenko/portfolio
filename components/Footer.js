@@ -16,7 +16,7 @@ export default props => (
           </a>
         </div>
         <div className="social-link">
-          <a href="#">
+          <a href="/static/resume.pdf">
             <img src={"/static/socialicons/resume.png"} alt="my resume" />
             check my CV
           </a>
