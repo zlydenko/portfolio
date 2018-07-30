@@ -54,6 +54,7 @@ export default ({ title, text }) => (
         bottom: 0;
         animation: appear 0.4s ease forwards;
         border: 0.1em solid rgb(71, 69, 209);
+        box-shadow: rgba(71, 69, 209, 0.8) 0px 20px 68px;
       }
 
       p {
