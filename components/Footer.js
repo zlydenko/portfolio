@@ -48,6 +48,12 @@ export default props => (
         margin-bottom: 2em;
       }
 
+      @media screen and (max-width: 600px) {
+        .social-link {
+          width: 100%;
+        }
+      }
+
       @media screen and (min-width: 1200px) {
         .social-links {
           flex-wrap: unset;
