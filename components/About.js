@@ -2,14 +2,14 @@ export default () => (
   <div className="col-xs-12 col-md-8 col-lg-7">
     <section className="about">
       <p className="text">
-        Hello! My name is Anton. Using algorithmic and structured thinking I'm
-        translate human needs on machine's language with access for people
-        across the globe
+        Hello! My name is Anton. I'm building interfaces and creating web
+        applications with main purpose: fulfill human needs with comfortable and
+        elegant solution
       </p>
       <small>Some call it frontend development nowadays</small>
       <p className="text">
         For me — it's more about curiosity, love to web technologies and
-        interest in "how things work" and "how to create things that work
+        interest in "how things work" and "how to create things that work"
       </p>
       <style jsx>{`
         .text:first-child:first-line {
