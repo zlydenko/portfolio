@@ -3,6 +3,7 @@ import Head from "next/head";
 import Background from "../components/Background";
 import About from "../components/About";
 import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 
 export default () => (
   <div>
@@ -25,6 +26,7 @@ export default () => (
       </div>
     </div>
     <Projects />
+    <Footer />
 
     <style global jsx>
       {`
