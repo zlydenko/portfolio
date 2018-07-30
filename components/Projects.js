@@ -1,39 +1,7 @@
 import React from "react";
 
 import Overlay from "./Overlay";
-
-const projectList = [
-  {
-    id: 5,
-    name: "ubereats",
-    description: "hello world",
-    src: "/static/mockups/ubereats/hires.jpg"
-  },
-  {
-    id: 1,
-    name: "aviasales",
-    description: "hello world",
-    src: "/static/mockups/aviasales/hires.jpg"
-  },
-  {
-    id: 3,
-    name: "movienight",
-    description: "hello world",
-    src: "/static/mockups/movienight/hires.png"
-  },
-  {
-    id: 4,
-    name: "saasify",
-    description: "hello world",
-    src: "/static/mockups/saasify/hires.jpg"
-  },
-  {
-    id: 2,
-    name: "bitcoinprice",
-    description: "hello world",
-    src: "/static/mockups/bitcoinprice/hires.png"
-  }
-];
+import projectList from "./projectsList";
 
 class Project extends React.Component {
   state = {
@@ -45,13 +13,18 @@ class Project extends React.Component {
   }
 
   render() {
-    const { name, description, src } = this.props;
-
+    const { name, description, src, links } = this.props;
     return (
       <React.Fragment>
         <div className="project-wrapper" onClick={e => this.openOverlay(e)}>
-          <img src={src} alt={name} />
-          {this.state.overlay && <Overlay title={name} text={description} />}
+          <picture>
+            <source srcSet={src.high} media="(min-width: 700px)" />
+            <source srcSet={src.low} />
+            <img srcSet={src.low} alt={name} />
+          </picture>
+          {this.state.overlay && (
+            <Overlay title={name} text={description} links={links} />
+          )}
         </div>
         <style jsx>{`
           .project-wrapper {
@@ -95,6 +68,8 @@ const Projects = props => (
                 name={project.name}
                 description={project.description}
                 src={project.src}
+                tech={project.tags}
+                links={project.links}
               />
             </div>
           </React.Fragment>

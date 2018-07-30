@@ -1,4 +1,6 @@
-export default ({ title, text }) => (
+import Link from "./Link";
+
+export default ({ title, text, links }) => (
   <div>
     <header>
       <svg
@@ -38,9 +40,13 @@ export default ({ title, text }) => (
     <main>
       <h3>{title}</h3>
       <p>{text}</p>
+      <Link href={links.preview}>Preview</Link>
+      <Link href={links.git}>GitHub</Link>
     </main>
     <style jsx>{`
       div {
+        font-size: 0.5em;
+        overflow: hidden;
         font-family: "Fira Mono", monospace;
         font-weight: 400;
         text-align: left;
@@ -67,6 +73,7 @@ export default ({ title, text }) => (
 
       @media screen and (min-width: 1000px) {
         div {
+          font-size: 1em;
           top: 2em;
           margin-left: 2em;
           margin-right: 2em;
@@ -74,6 +81,7 @@ export default ({ title, text }) => (
         }
 
         h3 {
+          font-size: 2em;
           margin-top: 0em;
           text-align: center;
         }
