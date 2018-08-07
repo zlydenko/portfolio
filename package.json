@@ -1,5 +1,5 @@
 {
-  "name": "nextjs-practice",
+  "name": "portfolio",
   "version": "1.0.0",
   "main": "index.js",
   "devDependencies": {},
@@ -8,10 +8,11 @@
   "license": "ISC",
   "description": "",
   "scripts": {
+    "offline-dev": "next --offline",
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "push": "git push origin feat/nextjs && now --public && now alias"
+    "push": "git push && now --public && now alias"
   },
   "dependencies": {
     "next": "^6.1.1",

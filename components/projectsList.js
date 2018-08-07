@@ -40,7 +40,7 @@ export default [
       low: "/static/mockups/movienight/lowres.png"
     },
     links: {
-      preview: "https://movie-night.netlify.com/",
+      preview: "https://movie-night.now.sh/",
       git: "https://github.com/zlydenko/movie-night"
     }
   },
