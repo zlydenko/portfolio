@@ -8,6 +8,18 @@ import Footer from "../components/Footer";
 export default () => (
   <div>
     <Head>
+      <script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=UA-123725809-1"
+      />
+      <script>
+        {`window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-123725809-1');`}
+      </script>
+
       <title>Anton Zlydenko</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       <link
